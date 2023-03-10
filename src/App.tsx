@@ -68,8 +68,8 @@ const App = () => {
             minSalary: parseInt(job.minSalary),
             maxSalary: parseInt(job.maxSalary),
             remoteType: job.remoteType,
-            minEmployees: parseInt(job.totalEmployees.split("-")[0]),
-            maxEmployees: parseInt(job.totalEmployees.split("-")[1])
+            minEmployees: parseInt(job.totalEmployees?.split("-")[0]),
+            maxEmployees: parseInt(job.totalEmployees?.split("-")[1])
           } 
     
           const { status } = await JobService.createJob(payload)
