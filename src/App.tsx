@@ -115,7 +115,8 @@ const App = () => {
 
         </div>
 
-        <div className="flex flex-wrap justify-center gap-[12px]">
+        <div className="flex flex-wrap px-20 pb-20 gap-[12px]">
+
 
             {
                 listJobs.length === 0 ? 
@@ -125,7 +126,6 @@ const App = () => {
                 </div>  :
 
                 listJobs.map((job, index) => (
-
                     // Reusable Card Component
                     <Card key={index} className='border border-solid border-[#E6E6E6] rounded-[10px] w-[830px] h-[320px] bg-[#FFFFFF] font-poppins px-[24px] py-[16px] flex gap-[8px]'>
 
@@ -188,11 +188,11 @@ const App = () => {
                         </CardFooter>
 
                         </Stack>
-
                     </Card>
                 ))
 
             }
+
 
         </div>
         </div>
