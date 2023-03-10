@@ -77,7 +77,6 @@ const App = () => {
           if(status === 201) {
 
             toggleModal()
-            toggleNext()
             fetchJobs()
                 
           } else {
