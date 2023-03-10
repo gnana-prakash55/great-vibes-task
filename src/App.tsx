@@ -74,7 +74,7 @@ const App = () => {
     
           const { status } = await JobService.createJob(payload)
           
-          if(status === 201) {
+          if(status === 201) { // Success
 
             toggleModal()
             setJob({
@@ -86,7 +86,12 @@ const App = () => {
             fetchJobs()
 
                 
-          } else {
+          } else { // Fail
+            setJob({
+                jobTitle: "",
+                companyName: "",
+                industry: ""
+            })
             alert("Something Went Wrong")
           }
          
