@@ -189,11 +189,11 @@ const App = () => {
 
                                 <Button className='bg-[#1597E4] hover:bg-[#00a2ff] text-[#FFFFFF] px-[16px] py-[8px] h-[40px]'>
                                     Apply Now
-                                </Button> :
+                                </Button> : job.applyType === 2 ?
 
                                 <Button className='bg-transparent border border-[#1597E4] hover:bg-[#1597E4] hover:text-[#FFFFFF] text-[#1597E4] px-[16px] py-[8px] h-[40px]'>
                                     External Apply
-                                </Button>
+                                </Button> : ""
 
                             }
 
