@@ -77,7 +77,14 @@ const App = () => {
           if(status === 201) {
 
             toggleModal()
+            setJob({
+                jobTitle: "",
+                companyName: "",
+                industry: ""
+            })
+            toggleNext()
             fetchJobs()
+
                 
           } else {
             alert("Something Went Wrong")
